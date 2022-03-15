@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #clock {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="clock"></div>
+
+    <script>
+        const clock = document.getElementById('clock');
+
+        setInterval(() => {
+            const now = new Date();
+            clock.innerHTML = now.toLocaleString('en-US');
+        }, 1000);
+    </script>
+</body>
+
+</html>
