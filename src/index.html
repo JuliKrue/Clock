@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <style>
-        #clock {
-            color: red;
-        }
-    </style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Clock" author="Julia Krueger-Pfannebecker">
+<title>Digital Clock</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
 
 <body>
     <div id="clock"></div>
-
-    <script>
-        const clock = document.getElementById('clock');
-
-        setInterval(() => {
-            const now = new Date();
-            clock.innerHTML = now.toLocaleString('en-US');
-        }, 1000);
-    </script>
 </body>
 
 </html>
